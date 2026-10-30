@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes – Tastes of Africa</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+  <!-- <The navigation bar> -->
+    <nav aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Tastes of Africa</a>
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html" class="active" aria-current="page">Recipes</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="page-header">
+      <h1>African Recipes</h1>
+      <p>Explore dishes from across the continent. Filter by region to find your next favourite.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="recipes-heading">
+      <div class="section-inner">
+        <h2 class="visually-hidden" id="recipes-heading">All Recipes</h2>
+
+        <div class="filter-bar" role="group" aria-label="Filter recipes by region">
+          <button class="filter-btn active" data-filter="all">All Recipes</button>
+          <button class="filter-btn" data-filter="west-africa">West Africa</button>
+          <button class="filter-btn" data-filter="east-africa">East Africa</button>
+          <button class="filter-btn" data-filter="north-africa">North Africa</button>
+        </div>
+
+        <ul class="cards-grid" role="list">
+
+          <li class="card recipe-card" data-region="west-africa">
+            <figure class="card-img-wrap">
+              <img src="images/jollof.jpg" alt="A bowl of Jollof Rice" />
+              <figcaption class="card-tag">West Africa</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Jollof Rice</h3>
+              <p>West Africa's iconic <mark>tomato</mark> rice dish, full of smoky depth and bold <mark>scotch bonnet</mark> spice.</p>
+              <div class="card-footer">
+                <a href="recipe-jollof.html" class="btn btn-sm">View Recipe</a>
+                <button class="fav-btn" data-id="jollof" aria-label="Save Jollof Rice to favourites">❤ Save</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="card recipe-card" data-region="north-africa">
+            <figure class="card-img-wrap">
+              <img src="images/tagine.jpg" alt="A Moroccan Tagine pot" />
+              <figcaption class="card-tag">North Africa</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Tagine</h3>
+              <p>A slow-cooked Moroccan stew with <mark>cumin</mark>, <mark>cinnamon</mark>, olives, and preserved lemon.</p>
+              <div class="card-footer">
+                <a href="recipe-tagine.html" class="btn btn-sm">View Recipe</a>
+                <button class="fav-btn" data-id="tagine" aria-label="Save Tagine to favourites">❤ Save</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="card recipe-card" data-region="east-africa">
+            <figure class="card-img-wrap">
+              <img src="images/injera.webp" alt="Ethiopian Injera flatbread" />
+              <figcaption class="card-tag">East Africa</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Injera</h3>
+              <p>Ethiopia's tangy sourdough flatbread made from <mark>teff</mark>, the foundation of every East African feast.</p>
+              <div class="card-footer">
+                <a href="recipe-injera.html" class="btn btn-sm">View Recipe</a>
+                <button class="fav-btn" data-id="injera" aria-label="Save Injera to favourites">❤ Save</button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <small class="footer-copy">&copy; 2026 Tastes of Africa. Celebrating the flavours of a continent.</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

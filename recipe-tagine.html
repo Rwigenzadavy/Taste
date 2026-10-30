@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tagine – Tastes of Africa</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Tastes of Africa</a>
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html" class="active" aria-current="page">Recipes</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="recipe-detail" aria-labelledby="recipe-heading">
+
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb" style="justify-content:flex-start; margin-bottom:1.5rem;">
+          <li><a href="index.html">Home</a></li>
+          <li><span aria-hidden="true">/</span></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><span aria-hidden="true">/</span></li>
+          <li aria-current="page">Tagine</li>
+        </ol>
+      </nav>
+
+      <header>
+        <div class="recipe-meta">
+          <span class="recipe-badge">North Africa</span>
+          <span class="recipe-badge">Morocco</span>
+          <span class="recipe-badge">2 hrs</span>
+        </div>
+        <h1 id="recipe-heading">Moroccan Tagine</h1>
+      </header>
+
+      <figure>
+        <img class="recipe-hero-img" src="images/tagine.jpg" alt="A Moroccan tagine pot with lamb and vegetables" />
+      </figure>
+
+      <aside class="cultural-note" aria-label="Cultural background">
+        Named after the conical clay pot it's cooked in, tagine is the soul of Moroccan cuisine. The slow-cooking method traps steam and returns moisture to the dish, creating meltingly tender meat infused with <mark>cumin</mark>, <mark>cinnamon</mark>, and <mark>ras el hanout</mark>. It's a dish that tells the story of the ancient Silk Road trade routes.
+      </aside>
+
+      <button class="fav-btn" data-id="tagine" style="margin-bottom:1rem;" aria-label="Save Tagine to favourites">❤ Save to Favourites</button>
+
+      <section aria-labelledby="ingredients-heading">
+        <h2 id="ingredients-heading">Ingredients</h2>
+        <ul>
+          <li>700g lamb shoulder, cut into chunks</li>
+          <li>1 large onion, grated</li>
+          <li>3 garlic cloves, minced</li>
+          <li>2 tbsp olive oil</li>
+          <li>1 tsp ground cumin</li>
+          <li>1 tsp ground coriander</li>
+          <li>1 tsp ground cinnamon</li>
+          <li>½ tsp ground ginger</li>
+          <li>½ tsp turmeric</li>
+          <li>100g dried apricots</li>
+          <li>50g green olives</li>
+          <li>1 preserved lemon, rind only, sliced</li>
+          <li>400ml chicken stock</li>
+          <li>Salt and pepper to taste</li>
+          <li>Fresh coriander to garnish</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="instructions-heading">
+        <h2 id="instructions-heading">Instructions</h2>
+        <details>
+          <summary>Show Cooking Instructions</summary>
+          <ol>
+            <li>Mix all spices together. Coat the lamb pieces in the spice mix and leave to marinate for at least 30 minutes.</li>
+            <li>Heat olive oil in a tagine or heavy casserole dish. Brown the lamb in batches and set aside.</li>
+            <li>In the same pot, soften the grated onion and garlic for 5 minutes.</li>
+            <li>Return the lamb to the pot. Add stock, apricots, olives, and preserved lemon.</li>
+            <li>Bring to a simmer, then cover and cook on very low heat for 1.5–2 hours until the lamb is tender.</li>
+            <li>Adjust seasoning and garnish with fresh coriander. Serve with couscous or crusty bread.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section aria-labelledby="video-heading">
+        <h2 id="video-heading">Watch It Being Made</h2>
+        <figure class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How to make Moroccan Tagine" allowfullscreen></iframe>
+        </figure>
+      </section>
+
+      <section aria-labelledby="origin-heading">
+        <h2 id="origin-heading">Country of Origin</h2>
+        <figure class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6893487.8!2d-7.0926!3d31.7917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b88619651c58d%3A0xd9d39441392fb24!2sMorocco!5e0!3m2!1sen!2sma!4v1"
+            title="Morocco on Google Maps" allowfullscreen loading="lazy">
+          </iframe>
+          <figcaption>Morocco, North Africa</figcaption>
+        </figure>
+      </section>
+
+      <a href="recipes.html" class="btn btn-outline">← Back to Recipes</a>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <small class="footer-copy">&copy; 2026 Tastes of Africa. Celebrating the flavours of a continent.</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

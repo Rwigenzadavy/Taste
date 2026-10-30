@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tastes of Africa</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="nav-inner">
+        <span class="nav-logo">Tastes of Africa</span>
+        <ul role="list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Tastes of <span>Africa</span></h1>
+        <p>Discover the rich, vibrant flavours of African cuisine — from the spice markets of Marrakech to the smoky kitchens of Lagos.</p>
+        <div class="hero-actions">
+          <a href="#featured-dishes" class="btn">Explore Recipes</a>
+        </div>
+        <!-- Embedded YouTube video introducing African food culture -->
+        <figure class="hero-video">
+          <iframe
+            src="https://www.youtube.com/embed/UY3H5a_Hi3A"
+            title="Introduction to African Food Culture"
+            allowfullscreen>
+          </iframe>
+        </figure>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" id="featured-dishes" aria-labelledby="featured-heading">
+      <div class="section-inner">
+        <h2 class="section-title" id="featured-heading">Featured Dishes</h2>
+        <p class="section-sub">Three main recipes that really liked in African cookings.</p>
+
+        <ul class="cards-grid" role="list">
+
+          <li class="card">
+            <figure class="card-img-wrap">
+              <img src="images/fufu.jpg" alt="" />
+              <figcaption class="card-tag">East Africa</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Ugali and Fufu</h3>
+              <p>Ugali is a dense, stiff porridge that serves as a primary staple food across East and Southern Afric</p>
+              <div class="card-footer">
+                <a href="recipe-jollof.html" class="btn btn-sm">View Recipe</a>
+                <button class="fav-btn" data-id="jollof" aria-label="Save Jollof Rice to favourites">❤ Save</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="card">
+            <figure class="card-img-wrap">
+              <img src="images/jollof.jpg" alt="" />
+              <figcaption class="card-tag">West</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Jollof Rice</h3>
+              <p>West Africa's most beloved one-pot rice dish, slow-cooked in a rich tomato and scotch bonnet sauce.</p>
+              <div class="card-footer">
+                <a href="recipe-tagine.html" class="btn btn-sm">View Recipe</a>
+                <button class="fav-btn" data-id="tagine" aria-label="Save Tagine to favourites">❤ Save</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="card">
+            <figure class="card-img-wrap">
+              <img src="images/bobotie.jpg" alt="" />
+              <figcaption class="card-tag">South Africa</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Bobotie</h3>
+              <p>Considered the national dish of South Africa, this recipe reflects the country's Cape Malay influence.</p>
+              <div class="card-footer">
+                <a href="recipe-injera.html" class="btn btn-sm">View Recipe</a>
+                <button class="fav-btn" data-id="injera" aria-label="Save Injera to favourites">❤ Save</button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Explore by Region -->
+    <section class="section band" aria-labelledby="regions-heading">
+      <div class="section-inner">
+        <span class="section-label">Explore</span>
+        <h2 class="section-title" id="regions-heading">By Region</h2>
+        <p class="section-sub">Dive into the distinct food cultures that make up the African continent.</p>
+        <nav class="region-links" aria-label="Regions navigation">
+          <a href="regions.html#west-africa" class="btn">West Africa</a>
+          <a href="regions.html#east-africa" class="btn btn-outline">East Africa</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Latest Food Trends -->
+    <section class="section" aria-labelledby="trends-heading">
+      <div class="section-inner">
+        <span class="section-label">Trending</span>
+        <h2 class="section-title" id="trends-heading">Latest Food Trends</h2>
+        <div class="trends-grid">
+
+          <article class="trend-item">
+            <h3>African Cuisine Goes Global</h3>
+            <p>From Afrobeats to Afro-cuisine — restaurants across London, New York, and Paris are putting <mark>West African flavours</mark> on the map. Dishes like <mark>suya</mark> and <mark>egusi soup</mark> are appearing on fine-dining menus worldwide.</p>
+          </article>
+
+          <article class="trend-item">
+            <h3>The Rise of Fermented Foods</h3>
+            <p>Fermented staples like <mark>injera</mark>, <mark>dawadawa</mark>, and <mark>ogi</mark> are gaining recognition for their probiotic benefits and deep umami flavour — a tradition Africa has practised for centuries.</p>
+          </article>
+
+          <article class="trend-item">
+            <h3>Ancient Grains Rediscovered</h3>
+            <p>Grains like <mark>teff</mark>, <mark>fonio</mark>, and <mark>sorghum</mark> are being celebrated globally as nutritious, gluten-friendly alternatives with deep roots in African agriculture.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <small class="footer-copy">&copy; 2026 Tastes of Africa. Celebrating the flavours of a continent.</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

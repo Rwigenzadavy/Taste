@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Injera – Tastes of Africa</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">Tastes of Africa</a>
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html" class="active" aria-current="page">Recipes</a></li>
+          <li><a href="regions.html">Regions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="recipe-detail" aria-labelledby="recipe-heading">
+
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb" style="justify-content:flex-start; margin-bottom:1.5rem;">
+          <li><a href="index.html">Home</a></li>
+          <li><span aria-hidden="true">/</span></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><span aria-hidden="true">/</span></li>
+          <li aria-current="page">Injera</li>
+        </ol>
+      </nav>
+
+      <header>
+        <div class="recipe-meta">
+          <span class="recipe-badge">East Africa</span>
+          <span class="recipe-badge">Ethiopia</span>
+          <span class="recipe-badge">3 days (ferment) + 30 min</span>
+        </div>
+        <h1 id="recipe-heading">Injera</h1>
+      </header>
+
+      <figure>
+        <img class="recipe-hero-img" src="images/injera.jpg" alt="Ethiopian Injera flatbread with stews on top" />
+      </figure>
+
+      <aside class="cultural-note" aria-label="Cultural background">
+        Injera is more than bread — it's the plate, the utensil, and the centrepiece of Ethiopian and Eritrean dining. Made from <mark>teff</mark>, an ancient grain native to the Horn of Africa, injera's spongy texture and sour flavour come from a natural fermentation process. Eating injera is a communal act: everyone tears from the same bread.
+      </aside>
+
+      <button class="fav-btn" data-id="injera" style="margin-bottom:1rem;" aria-label="Save Injera to favourites">❤ Save to Favourites</button>
+
+      <section aria-labelledby="ingredients-heading">
+        <h2 id="ingredients-heading">Ingredients</h2>
+        <ul>
+          <li>2 cups teff flour (or a mix of teff and all-purpose flour)</li>
+          <li>2½ cups water (plus more as needed)</li>
+          <li>½ tsp salt</li>
+          <li>A pinch of baking soda (optional, for quicker rise)</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="instructions-heading">
+        <h2 id="instructions-heading">Instructions</h2>
+        <details>
+          <summary>Show Cooking Instructions</summary>
+          <ol>
+            <li>Mix teff flour and water in a bowl until smooth. Cover loosely with a cloth.</li>
+            <li>Leave to ferment at room temperature for 2–3 days, stirring once daily. The batter should smell pleasantly sour and develop small bubbles.</li>
+            <li>When ready, stir in salt. The batter should be thin — like crepe batter.</li>
+            <li>Heat a non-stick pan or flat griddle over medium-high heat. Do not grease it.</li>
+            <li>Pour a ladleful of batter in a spiral from the outside in, covering the pan. Tilt to spread if needed.</li>
+            <li>Cover and cook for 2–3 minutes. Injera is done when the surface is dry and full of holes, and the edges lift naturally. Do not flip.</li>
+            <li>Slide onto a clean cloth to cool. Serve with stews like doro wat or misir wat.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section aria-labelledby="video-heading">
+        <h2 id="video-heading">Watch It Being Made</h2>
+        <figure class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How to make Injera" allowfullscreen></iframe>
+        </figure>
+      </section>
+
+      <section aria-labelledby="origin-heading">
+        <h2 id="origin-heading">Country of Origin</h2>
+        <figure class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8107671.5!2d38.9637!3d8.6369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1635d0cedd6cfd2b%3A0x7bf6a67f5348c55a!2sEthiopia!5e0!3m2!1sen!2set!4v1"
+            title="Ethiopia on Google Maps" allowfullscreen loading="lazy">
+          </iframe>
+          <figcaption>Ethiopia, East Africa</figcaption>
+        </figure>
+      </section>
+
+      <a href="recipes.html" class="btn btn-outline">← Back to Recipes</a>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <small class="footer-copy">&copy; 2026 Tastes of Africa. Celebrating the flavours of a continent.</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
